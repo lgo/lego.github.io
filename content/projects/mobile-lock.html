@@ -1,0 +1,13 @@
+---
+title: Mobile Door Locking
+description: >
+  Electronic key substitution
+created: !!timestamp '2013-10-04 10:00:00'
+stage: Concept
+---
+
+Mobile Door Locking (name tbd) is an innovative electronic project for household automation. It's purpose is to provide an easy way for locking your door on the go if your of the paranoid type, or offer an ease of security when dealing with other residents or visitors. Through a system of authentication with resident's systems it can provide an easy way to remotely lock the household when in a rush and on the go, or making sure everything is closed up for the night with multiple people going in and out consitently. In a situation where you have a loved one coming over, you can provide them with a single use hash code or key which will allow them to unlock the door a single time, in the event you can't be there when they are ariving or for them to give you a surprise when you have them keep one for emergencies!
+
+The project was planned to be developed using an Arduino platform, connecting via. wireless internet to recieve data through various streams offered by the solution, of which are: SMS, email, mobile app (via. socket connection to arduino server).
+
+It is a mechanical system that is attached to the back of the deadbolt with an arduino contained inside. Through a wireless internet shield it polls a email server for recieved SMS or direct email commands and also handles an open port socket which is used for communicating with the mobile app, which includes handling authentication handshakes for obvious security reasons.

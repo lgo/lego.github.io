@@ -1,0 +1,7 @@
+extends: site.yaml
+mode: production
+publisher:
+        pyfs:
+            type: hyde.ext.publishers.pyfs
+            url:bravococlan.com
+            ftp:http://bravococlan.com/script/jp/

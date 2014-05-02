@@ -1,0 +1,51 @@
+{% macro render_main_menu() -%}
+
+{% for item in menu -%}
+    {% set active = False -%}
+    {% if item.type == 'page' -%}
+        {% set active = (resource.url ==
+            site.content.resource_from_relative_path(item.url).url) -%}
+    {% else -%}
+        {% set active = (node ==
+            site.content.node_from_relative_path(item.url)) -%}
+    {%- endif %}
+    <li{% if active %} class="active"{% endif %}>
+        <a href="{{ content_url(item.url) }}">{{ item.title }}</a>
+    </li>
+{%- endfor %}
+
+{%- endmacro %}
+
+{% macro render_sidebar() -%}
+<ul class="nav nav-list">
+    <li class="nav-header">Sidebar</li>
+{% for sidebar_item in sidebar -%}
+  <li{% if sidebar_item.url == resource.url or sidebar_item.active %} class="active"{% endif %}><a href="{{ sidebar_item.url }}">{{ sidebar_item.title }}</a></li>
+{%- endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro render_excerpt(res, class=None) %}
+{% refer to res.relative_path as post %}
+<div class="container">
+<h3><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h3>
+<p><small>
+  <time datetime="{{ res.meta.created.strftime('%Y-%m-%d') }}">
+    Posted: {{ res.meta.created.strftime('%a, %d %b %Y') }}
+  </time>
+</small></p>
+<a href="{{ content_url(res.url) }}">Read more&hellip;</a>
+</div>
+{% endmacro %}
+
+{% macro render_list(res) %}
+<dt>{{ res.meta.created.strftime('%d %b %Y') }}</dt>
+<dd><a href="{{ content_url(res.url) }}" style="padding-left: 25px">{{ res.meta.title }}</a></dd>
+{% endmacro %}
+
+{% macro render_box(res) %}
+<span class="col-2 post">
+<h4><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></h4>
+</span>
+{% endmacro %}
+

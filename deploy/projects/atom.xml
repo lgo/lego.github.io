@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="/projects/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2014-02-11T13:45:55Z</updated>
+
+    <id>/projects/atom.xml/</id>
+
+            <entry>
+            <title type="html">JoOS</title>
+            <author><name></name></author>
+            <link href="/projects/joos.html"/>
+            <updated>2014-01-03T10:00:00Z</updated>
+            <published>2014-01-03T10:00:00Z</published>
+            <id>/projects/joos.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;As a commonly trending interest of mine, I love to fall into depths of documentation and outlining of how computers on the underside operate. That leads me to a bit of a higher level discovery then my previous &lt;span class=&#34;caps&#34;&gt;NES&lt;/span&gt; project, but still a relatively low level - involving a deeper understanding of registers, memory management, cpu cycles in regards to individual instructions, and&amp;nbsp;more.&lt;/p&gt;
+&lt;p&gt;My target for this project is grab hold of concepts more so and be able to incorporate them successfully into the project and possibly move the operating system into usability [or more so proof of concept for features]. Currently the feature and/or concept with the most effort being put in is interrupt handling, which leads to input and various other tasks the &lt;span class=&#34;caps&#34;&gt;CPU&lt;/span&gt; has to undergo during execution where it passes information to the operating&amp;nbsp;system.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Coldeas</title>
+            <author><name></name></author>
+            <link href="/projects/coldeas.html"/>
+            <updated>2013-12-23T10:00:00Z</updated>
+            <published>2013-12-23T10:00:00Z</published>
+            <id>/projects/coldeas.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;Currently a prospective project inspired by a high school teacher and their passion for collaborative learning. It is a project akin to &lt;a href=&#34;http://www.knowledgeforum.com/&#34;&gt;Knowledge Forum&lt;/a&gt; that is designed to be open and easy for teachers to learn and implement within their respective classrooms. As an open source project it will be open to contributions from educators all over to host features that they find most beneficial to their students&amp;nbsp;learning.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">jjNES</title>
+            <author><name></name></author>
+            <link href="/projects/jjnes.html"/>
+            <updated>2013-11-22T10:00:00Z</updated>
+            <published>2013-11-22T10:00:00Z</published>
+            <id>/projects/jjnes.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;jjNES is a project driven by my passion to learn. It&amp;#8217;s primary goal is not for the project itself but for what I hope to get out of the project. While there is not much to show in terms of functional code, I have created a model of how the architecture that the Nintendo Entertainment System is built upon operates. What I hoped to get out of it was a deeper understanding of how computer architectures in general operate and without a doubt I have gained knowledge outside of what I had expected to throughout my research of the &lt;span class=&#34;caps&#34;&gt;NES&lt;/span&gt; architecture system. Such things are the purpose and mapping of assembly to machine code, the interpretation of machine code, and various important components that create the underlying system such as a uniform clock&amp;nbsp;frequency.&lt;/p&gt;
+&lt;p&gt;Much of the project to this point has been spent reading documents on the architecture components and interactions such as the &lt;span class=&#34;caps&#34;&gt;NES&lt;/span&gt;&amp;#8217;s 6502&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;CPU&lt;/span&gt;.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Mobile Door Locking</title>
+            <author><name></name></author>
+            <link href="/projects/mobile-lock.html"/>
+            <updated>2013-10-04T10:00:00Z</updated>
+            <published>2013-10-04T10:00:00Z</published>
+            <id>/projects/mobile-lock.html</id>
+            
+            <content type="html">
+                                &lt;p&gt;Mobile Door Locking (name tbd) is an innovative electronic project for household automation. It&amp;#8217;s purpose is to provide an easy way for locking your door on the go if your of the paranoid type, or offer an ease of security when dealing with other residents or visitors. Through a system of authentication with resident&amp;#8217;s systems it can provide an easy way to remotely lock the household when in a rush and on the go, or making sure everything is closed up for the night with multiple people going in and out consitently. In a situation where you have a loved one coming over, you can provide them with a single use hash code or key which will allow them to unlock the door a single time, in the event you can&amp;#8217;t be there when they are ariving or for them to give you a surprise when you have them keep one for&amp;nbsp;emergencies!&lt;/p&gt;
+&lt;p&gt;The project was planned to be developed using an Arduino platform, connecting via. wireless internet to recieve data through various streams offered by the solution, of which are: &lt;span class=&#34;caps&#34;&gt;SMS&lt;/span&gt;, email, mobile app (via. socket connection to arduino&amp;nbsp;server).&lt;/p&gt;
+&lt;p&gt;It is a mechanical system that is attached to the back of the deadbolt with an arduino contained inside. Through a wireless internet shield it polls a email server for recieved &lt;span class=&#34;caps&#34;&gt;SMS&lt;/span&gt; or direct email commands and also handles an open port socket which is used for communicating with the mobile app, which includes handling authentication handshakes for obvious security&amp;nbsp;reasons.&lt;/p&gt;            </content>
+        </entry>
+    </feed>

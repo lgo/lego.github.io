@@ -1,0 +1,30 @@
+{% extends "base_new.j2" %}
+
+{% block container %}
+{% block articles %}
+<section id="articles">
+  <div class="wrap" style="padding-top: 1px">
+    <h1 class="serif">Recent Articles</h1>
+    <div class="row">
+{% block posts %}
+ {% for grp, res_walker in site.content.walk_level_groups() %}
+  {% if grp.name == "posts" %}
+    {% for res in res_walker %}
+      {% if loop.index0 < 5 %}
+        <span class="col-2 post">
+          <a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a>
+        </span>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+     {% endblock posts %}
+    </div>
+  </div>
+</section>
+{% endblock articles %}
+<section id="aboutme" class="wrap">
+{% block aboutme %}
+{% endblock aboutme %}
+</section>
+{% endblock container %}

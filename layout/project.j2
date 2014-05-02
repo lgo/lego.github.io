@@ -1,0 +1,24 @@
+{% extends "base_new.j2" %}
+
+{% block container -%}
+<div class="wrap">
+<div id="article">
+<h1>
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+<time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+    Created: {{ resource.meta.created.strftime('%d %b %Y') }}
+</time>
+<p>Stage: {{ resource.meta.stage }}</p>
+</div>
+<article id="aboutme">
+{% filter markdown|typogrify -%}
+{% mark post -%}
+{% block post -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+</article>
+</div>
+{%- endblock %}

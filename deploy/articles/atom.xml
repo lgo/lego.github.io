@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="/articles/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2014-02-11T13:45:55Z</updated>
+
+    <id>/articles/atom.xml/</id>
+
+            <entry>
+            <title type="html">The Big Business Dream</title>
+            <author><name></name></author>
+            <link href="/articles/big-business-dream.html"/>
+            <updated>2014-01-10T10:00:00Z</updated>
+            <published>2014-01-10T10:00:00Z</published>
+            <id>/articles/big-business-dream.html</id>
+                        <category   scheme="/blog/tags"
+                        term="thoughts"
+                        label="Thoughts" />
+                        <category   scheme="/blog/tags"
+                        term="entrepreneur"
+                        label="Entrepreneur" />
+                        <category   scheme="/blog/tags"
+                        term="business"
+                        label="Business" />
+            
+            <content type="html">
+                                &lt;p&gt;Starting off young with a passion for entrepreneurship isn&amp;#8217;t at all bad; it&amp;#8217;s how you take the experience. As you know, you can never be too young to dream&amp;nbsp;big.&lt;/p&gt;
+&lt;p&gt;While my experience of this wasn&amp;#8217;t completely a crash and burn, it never really set off to high. Yet from all experiences much can be learned and this post is to reflect on those lifelong skills learned during my most youthful endeavours, and to hopefully encourage or inspire others and their own ideas to proceed through, midst success or upon failure. What may seem as though a failure to the goals you have in mind, may be more of a success then all past successes, to quite the contrary. While when you succeed things may seem well and easy, but any task is only easy at the lack of real challenge. The perfect challenge among failure is exactly what it is, the challenge of trying to&amp;nbsp;succeed.&lt;/p&gt;
+&lt;p&gt;Now a bit of an aside, but a tad bit of what I feel is important to discuss is condition of a challenge. What may, or may not, be clear as to what a challenge really is. At least what I believe a challenge is to be is something of difficulty, often outside of what one&amp;#8217;s comfort zone may be. It would require a non-trivial amount of effort to complete or undergo, and often would require a greater amount of thought or strength - depending on context. To what I believe a challenge&amp;#8217;s key component is, is the process of learning underwent throughout the challenge. Whether this challenge is in regards to strength or plenty of precise thinking; I feel learning is at play. But hidden among this great effort of learning is the fierceness of challenges. If something were to be a challenge and you are continuing through the challenge, it would often be the case that the challenge is en route to a goal in mind, preventing it even. So with this challenges can often cause frustration, and obscure all else in the background - that being the learning at play. With the frustration the condition of challenges is different than that among normal lifestyles. Now what&amp;#8217;s observed with those who embrace challenges get past this layer of frustration. They take on the learning experience and typically bring it to another level. This involves plenty of reflection on why and how on the challenge and reach the point of what they did to surpass it. This, I feel, is what defines the true face of a challenge and at least how they should be approached among&amp;nbsp;entrepreneurship.&lt;/p&gt;
+&lt;p&gt;Coming back to the original topic, the most is learned from the true challenge faced among failure while trying to reach the goal of success. If it has already been such the case, where you have reached success it would so be the case that you have not encountered the same learning experience by reaching success directly. In the moments where you instead are faced with failure you more so will analyze what went wrong, reflect on how you could have approached a certain method better in a more  analytical way, as you will have first hand data on the results of the way you did&amp;nbsp;things.&lt;/p&gt;
+&lt;p&gt;So this article is more or less a very high level journal of how my failure, or to myself - my success, of attempting to start my own business&amp;nbsp;went.&lt;/p&gt;
+&lt;p&gt;Going a little more in depth of my actual experience.
+Now I know this is a common phenomena among &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt; service type people, so a lot of you may relate. I had practically become the family and friends &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt; guy. Of course though, they all wanted me to fix, and I emphasis only fix, the surface of the problem that the average user sees - which at times can be quite frustrating&amp;#8230; it&amp;#8217;s basically like getting told to run a root command with nothing but guest account&amp;nbsp;access.&lt;/p&gt;
+&lt;p&gt;Well anyways, I thought it was time I moved forward, after having done coop at quite a small &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt; establishment I felt I had learned a lot about a small business, and communicating with your customers. All of the operations seemed to appeal to me, from marketing to the technical nit and grit, and the general management. The whole small startup feel left me desiring more. &lt;span class=&#34;caps&#34;&gt;TODO&lt;/span&gt; - write the&amp;nbsp;rest&lt;/p&gt;            </content>
+        </entry>
+    </feed>

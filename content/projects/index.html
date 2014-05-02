@@ -1,0 +1,17 @@
+---
+title: Projects
+extends: project_listing.j2
+listable: false
+---
+
+{% block page_list %}
+<span style="padding: 0 15px;">
+  {% for grp, res_walker in site.content.walk_level_groups() %}
+    {% if grp.name == "projects" %}
+      {% for res in res_walker %}
+      <p><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></p>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</span>
+{% endblock %}

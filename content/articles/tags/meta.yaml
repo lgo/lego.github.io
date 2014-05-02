@@ -1,0 +1,2 @@
+extends: tagged_posts.j2
+listable: false

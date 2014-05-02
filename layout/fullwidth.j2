@@ -1,0 +1,19 @@
+{# Fullwidth template #}
+
+{% extends "topbar.j2" %}
+{% from "macros.j2" import render_box with context%}
+
+{% block container %}
+
+<div class="starter-template" style="padding: 40px 15px; text-align:center;">
+  <div class="lead">
+    {% filter markdown -%}
+      {% block leadtext %}{% endblock leadtext %}
+    {%- endfilter %}
+  </div>
+  <div class="content">
+    {% block content %}{% endblock content %}
+  </div>
+</div>
+
+{% endblock container %}
