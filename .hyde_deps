@@ -2,16 +2,15 @@
 !!python/unicode 'aboutme.html': [fullwidth.j2, topbar.j2, base.j2, analytics.j2,
   macros.j2]
 !!python/unicode 'articles/atom.xml': [atom.j2]
-!!python/unicode 'articles/big-business-dream.html': [base_new.j2, post.j2]
-!!python/unicode 'articles/index.html': [topbar.j2, listing.j2, base.j2, analytics.j2,
-  macros.j2]
+!!python/unicode 'articles/big-business-dream.html': [base.j2, post.j2]
+!!python/unicode 'articles/index.html': [listing.j2, macros.j2, base.j2]
 !!python/unicode 'articles/tags/business.html': [topbar.j2, base.j2, tagged_posts.j2,
   analytics.j2, macros.j2]
 !!python/unicode 'articles/tags/entrepreneur.html': [topbar.j2, base.j2, tagged_posts.j2,
   analytics.j2, macros.j2]
 !!python/unicode 'articles/tags/thoughts.html': [topbar.j2, base.j2, tagged_posts.j2,
   analytics.j2, macros.j2]
-!!python/unicode 'index.html': [base_new.j2, home.j2]
+!!python/unicode 'index.html': [base.j2, home.j2]
 !!python/unicode 'jumbo.html': [topbar.j2, jumbotron.j2, base.j2, analytics.j2, macros.j2]
 !!python/unicode 'media/css/bootstrap-theme.css': []
 !!python/unicode 'media/css/bootstrap-theme.min.css': []
@@ -51,16 +50,11 @@
 !!python/unicode 'media/static/style.css': []
 !!python/unicode 'offcanvas.html': [topbar.j2, base.j2, analytics.j2, columns.j2,
   macros.j2]
-!!python/unicode 'projects/.hyde_deps': [topbar.j2, base.j2, analytics.j2, project.j2,
-  macros.j2]
+!!python/unicode 'projects/.hyde_deps': [project.j2, base.j2]
 !!python/unicode 'projects/atom.xml': [atom.j2]
-!!python/unicode 'projects/coldeas.html': [topbar.j2, base.j2, analytics.j2, project.j2,
-  macros.j2]
-!!python/unicode 'projects/index.html': [listing.j2, base_new.j2, macros.j2]
-!!python/unicode 'projects/jjnes.html': [topbar.j2, base.j2, analytics.j2, project.j2,
-  macros.j2]
-!!python/unicode 'projects/joos.html': [topbar.j2, base.j2, analytics.j2, project.j2,
-  macros.j2]
-!!python/unicode 'projects/mobile-lock.html': [topbar.j2, base.j2, analytics.j2, project.j2,
-  macros.j2]
+!!python/unicode 'projects/coldeas.html': [project.j2, base.j2]
+!!python/unicode 'projects/index.html': [macros.j2, base.j2, project_listing.j2]
+!!python/unicode 'projects/jjnes.html': [project.j2, base.j2]
+!!python/unicode 'projects/joos.html': [project.j2, base.j2]
+!!python/unicode 'projects/mobile-lock.html': [project.j2, base.j2]
 !!python/unicode 'resume.html': [fullwidth.j2, topbar.j2, base.j2, analytics.j2, macros.j2]

@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif);
+html {
+  height: 100%; }
 body {
   margin: 0px;
   padding: 0px;
@@ -63,12 +65,14 @@ section h1 {
   vertical-align: middle; }
 
 footer {
+  border-top: 5px solid #555555;
   color: #cdceff;
   text-align: center;
   background-color: #6769cc;
   min-height: 40px;
   padding: 15px 0 0 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-top: -60px; }
 
 .menu {
   height: inherit;
@@ -95,8 +99,6 @@ footer {
   background-color: #ededed; }
 
 #container {
-  border-bottom: 5px solid #555555;
-  padding-bottom: 30px;
   height: 100%; }
 
 .row {
@@ -110,6 +112,7 @@ dl {
 
 dt {
   clear: left;
+  border-bottom: 5px solid #555555;
   float: left;
   overflow: hidden;
   text-align: right;

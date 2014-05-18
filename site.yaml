@@ -51,13 +51,3 @@ grouper:
               description: Posts
             - name: projects
               description: Projects
-tagger:
-    sorter: time
-    archives:
-        blog:
-            source: articles
-            target: articles/tags
-            template: tagged_posts.j2
-            archive_extension: html
-            meta:
-                listable: true

@@ -10,6 +10,7 @@ listable: false
     {% if grp.name == "projects" %}
       {% for res in res_walker %}
       <p><a href="{{ content_url(res.url) }}">{{ res.meta.title }}</a></p>
+      <p>{{ render_exerpt(res) }}</p>
       {% endfor %}
     {% endif %}
   {% endfor %}
