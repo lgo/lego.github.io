@@ -1,0 +1,4 @@
+*~
+*.swp
+deploy/
+.hyde_deps
