@@ -72,7 +72,8 @@ footer {
   min-height: 40px;
   padding: 15px 0 0 0;
   vertical-align: middle;
-  margin-top: -60px; }
+  margin-top: -60px;
+  position: sticky; }
 
 .menu {
   height: inherit;
@@ -99,7 +100,9 @@ footer {
   background-color: #ededed; }
 
 #container {
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 50px;
+  overflow: scroll; }
 
 .row {
   width: 100%;
