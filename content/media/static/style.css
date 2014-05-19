@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans|Droid+Serif);
-html {
-  height: 100%; }
+html ,
 body {
   margin: 0px;
   padding: 0px;
@@ -72,8 +71,8 @@ footer {
   min-height: 40px;
   padding: 15px 0 0 0;
   vertical-align: middle;
-  margin-top: -60px;
-  position: fixed; }
+  width: 100%;
+  position: sticky; }
 
 .menu {
   height: inherit;
@@ -100,8 +99,14 @@ footer {
   background-color: #ededed; }
 
 #container {
+  min-height: 100%;
+  height: auto;
+  }
+
+#body {
   height: 100%;
-  margin-bottom: 50px; }
+  margin-bottom: -60px;
+}
 
 .row {
   width: 100%;
