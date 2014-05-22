@@ -24,7 +24,9 @@
 </section>
 {% endblock articles %}
 <section id="aboutme" class="wrap">
+{% filter markdown -%}
 {% block aboutme %}
 {% endblock aboutme %}
+{%- endfilter %}
 </section>
 {% endblock container %}
