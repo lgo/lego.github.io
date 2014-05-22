@@ -32,7 +32,7 @@ section h1 {
 
 #aboutme {
   text-align: left;
-  border-top: 2px solid #707070;
+  max-width: 1000px;
   padding-top: 20px; }
 
 #brand {
@@ -96,7 +96,9 @@ footer {
 
 #articles {
   text-align: center;
-  background-color: #ededed; }
+  background-color: #ededed;
+  border-bottom: 2px solid #707070;
+}
 
 #container {
   min-height: 100%;
