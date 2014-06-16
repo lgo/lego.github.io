@@ -1,0 +1,20 @@
+{% extends "base.j2" %}
+
+{% block container -%}
+<div class="wrap">
+<div id="article">
+<h1>
+    <a href="{{ content_url(resource.url) }}">
+        {{ resource.meta.title }}
+    </a>
+</h1>
+</div>
+<article id="aboutme">
+{% filter markdown|typogrify -%}
+{% mark post -%}
+{% block post -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+</article>
+</div>
+{%- endblock %}
