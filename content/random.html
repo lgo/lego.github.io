@@ -4,10 +4,17 @@ description: The random of Joey Periera
 ---
 {% extends "page.j2" %}
 {% block post %}
+{% filter markdown %}
 Here I am merely outlaying random miscellaenous things I may have to share with you.
 
 At the moment that would solely be course notes I have written up in LaTeX for my courses currently.
-They will be linked up here in some time...
 
-Additionally I'm working towards writing a comprehensive 'book' on mathematical logic for computer science, an introductory to propositional and prepositional logic along with program validation. It's aimed to be a supplement or aid to a logic course currently offered at the University of Waterloo.
+ *  [CS246 [S14]]({{ media_url('coursenotes/cs246.pdf') }})
+ *  [CS245 [S14]]({{ media_url('coursenotes/cs245.pdf') }})
+
+Additionally I'm working towards writing a comprehensive 'book' on mathematical logic for computer science, an introductory to propositional and prepositional logic along with program validation. It's aimed to be a supplement or aid to a logic course currently offered at the University of Waterloo. This is currently what the CS245 link goes to.
+
+
+Also, I liek catz.
+{% endfilter %}
 {% endblock post %}
