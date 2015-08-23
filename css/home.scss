@@ -9,7 +9,7 @@
   height: auto;
   @include flexbox;
   @include flex-direction(column);
-  @include justify-content(center);
+  @include justify-content(flex-start);
 }
 
 .Home {
@@ -52,7 +52,7 @@
     }
 
     &-link {
-      background-color: $white;
+      background-color: $info-button-bg-color;
       @include vendor-prefix(border-radius, 2px, (webkit moz));
       cursor: pointer;
 
@@ -61,8 +61,8 @@
       @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
 
       &:hover {
-        color: $text-white;
-        background-color: $royal-purple;
+        color: $text-hover-color;
+        background-color: $text-hover-bg-color;
       }
     }
   }

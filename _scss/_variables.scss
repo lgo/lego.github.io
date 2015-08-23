@@ -9,23 +9,55 @@
   font-family: "Droid Serif", "serif";
 }
 
-$text-dark-gray: #404040;
-$text-white: #efefef;
-
+/////////
+// Colour sets
+/////////
 $white: #ffffff;
+$white-ish: #efefef;
 
 $lighter-gray: #fafafa;
 $light-gray: #f2f2f2;
 $medium-gray: #e5e5e5;
-$dark-gray: #aaaaaa;
+$dark-gray: #404040;
 
 $royal-purple: #4c4d96;
 $royal-purple-darker: #434485;
-$link-blue: #0490E5;
 
-// currently a UN blue (skyish blue)
-$animation-compliment: #53a7ea;
+$blue: #0490E5;
+$un-blue: #53a7ea;
 
+//////////
+// UI Colors
+//////////
+$text-color: $dark-gray;
+
+$text-hover-color: $white-ish;
+$text-hover-bg-color: $royal-purple;
+$text-hover-border-color: $royal-purple-darker;
+
+$info-button-bg-color: $white;
+
+$link-color: $blue;
+
+$menu-color: $dark-gray;
+$menu-bg-color: $lighter-gray;
+$menu-border-color: $medium-gray;
+
+$body-bg-color: $light-gray;
+
+$animation-compliment: $un-blue;
+
+// Modified color set
+// $menu-border-color: #CdD3D7;
+// $menu-color: #94AaAb;
+$menu-bg-color: #fff;
+$text-color: #000;
+$text-hover-color: #fff;
+$info-button-bg-color: $white;
+
+// Modified animation compliment
+$animation-compliment: #898BE2;
+// $animation-compliment: #7374E2;
 
 ///////////////////////////////////////////////
 //                                           //

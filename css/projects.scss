@@ -9,6 +9,14 @@
   height: auto;
   max-width: 1000px;
   margin: auto;
+
+  @include media-size(large) {
+    padding-top: 50px;
+  }
+
+  @include media-size(small) {
+    padding-top: 10px;
+  }
 }
 
 .Lead {
@@ -27,11 +35,11 @@
 
   @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
 
-  color: $link-blue;
+  color: $link-color;
 
   &:hover {
-    color: $text-white;
-    background-color: $link-blue;
+    color: $text-hover-color;
+    background-color: $link-color;
     @include vendor-prefix(border-radius, 2px, (webkit moz));
   }
 }

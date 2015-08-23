@@ -10,8 +10,8 @@
  */
 .MenuContainer {
   width: 100%;
-  background-color: $lighter-gray;
-  border-bottom: 3px solid $medium-gray;
+  background-color: $menu-bg-color;
+  border-bottom: 3px solid $menu-border-color;
 
   /* fixes android chrome animation issues, causes hardware accelerated rendering */
   -webkit-transform: translateZ(0);
@@ -65,6 +65,8 @@
       text-align: center;
       font-size: 1.5rem;
 
+      color: $menu-color;
+
       @include media-size(small) {
         font-size: 2rem;
       }
@@ -74,11 +76,11 @@
       }
 
       &:hover {
-        color: $text-white;
-        background-color: $royal-purple;
+        color: $text-hover-color;
+        background-color: $text-hover-bg-color;
 
         @include media-size(large) {
-          border-bottom: 3px solid $royal-purple-darker;
+          border-bottom: 3px solid $text-hover-border-color;
         }
       }
     }
@@ -102,7 +104,7 @@
 
     text-align: center;
 
-    border: solid 2px $text-dark-gray;
+    border: solid 2px $text-color;
     @include vendor-prefix(border-radius, 4px, (webkit moz));
   }
 }

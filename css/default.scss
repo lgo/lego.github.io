@@ -22,14 +22,15 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: $light-gray;
+  background-color: $body-bg-color;
 
   @include sans-serif-font;
 
-  color: $text-dark-gray;
+  color: $text-color;
 
   @include flexbox;
   @include flex-direction(column);
+  @include align-items(center);
 }
 
 .Container {
@@ -37,6 +38,6 @@ body {
 }
 
 a {
-  color: $text-dark-gray;
+  color: $text-color;
   text-decoration: none;
 }

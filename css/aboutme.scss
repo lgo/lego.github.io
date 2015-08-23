@@ -17,9 +17,16 @@ p {
 }
 
 .Aboutme {
-  padding-top: 50px;
   margin: auto;
   text-align: left;
+
+  @include media-size(large) {
+    padding-top: 50px;
+  }
+
+  @include media-size(small) {
+    padding-top: 10px;
+  }
 }
 
 .Lead {
@@ -37,48 +44,17 @@ p {
 
   @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
 
-  color: $link-blue;
+  color: $link-color;
 
   &:hover {
-    color: $text-white;
-    background-color: $link-blue;
+    color: $text-hover-color;
+    background-color: $link-color;
     @include vendor-prefix(border-radius, 2px);
   }
 }
 
-
-.RambleExpander {
-  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
-  &--hidden {
-    display: none;
-    opacity: 1;
-  }
-
-  &--transition {
-    opacity: 0;
-  }
-
-  &--expanded {
-    opacity: 1;
-  }
-}
-
-.RambleTooMuch {
-  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
-  &--hidden {
-    display: none;
-    opacity: 1;
-  }
-
-  &--transition {
-    opacity: 0;
-  }
-
-  &--expanded {
-    opacity: 1;
-  }
-}
-
+.RambleExpander,
+.RambleTooMuch,
 .RealRamble {
   @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
   &--hidden {
@@ -90,7 +66,7 @@ p {
     opacity: 0;
   }
 
-  &--rambling {
+  &--expanded {
     opacity: 1;
   }
 }

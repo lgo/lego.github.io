@@ -1,8 +1,5 @@
 # Theme customization
 
-# Color for top bar, links, etc
-highlight_color: '#C02942'
-
 # Profile data
 social:
   github: xLegoz
@@ -20,7 +17,3 @@ tagline: "Engineer, Hacker, Gamedev."
 
 # Google Analytics key
 google_analytics_key: UA-46626177-1
-
-
-# Toggle "Postings are my own" disclaimer in footer
-show_disclaimer: true
