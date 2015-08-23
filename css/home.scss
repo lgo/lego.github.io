@@ -3,12 +3,13 @@
 ---
 
 @import "variables";
+@import "flexbox";
 
 .Container {
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(center);
 }
 
 .Home {
@@ -22,12 +23,12 @@
 }
 
 .Brand {
-  font-family: "Droid Serif", "serif";
+  @include serif-font;
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
 
-  @media only screen and (max-width : 768px) {
+  @include media-size(small) {
     font-size: 3rem;
   }
 }
@@ -37,39 +38,35 @@
   margin-top: 20px;
   width: 400px;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
+  @include flexbox;
+  @include justify-content(space-around);
 
-  @media only screen and (max-width : 768px) {
-    flex-direction: column;
+  @include media-size(small) {
+    @include flex-direction(column);
     width: 100%;
   }
-}
 
-.Info-item {
-  @media only screen and (max-width : 768px) {
-    margin: 5px 20px;
+  &-item {
+    @include media-size(small) {
+      margin: 5px 20px;
+    }
+
+    &-link {
+      background-color: $white;
+      border-radius: 2px;
+      cursor: pointer;
+
+      padding: 10px;
+      display: block;
+      @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+
+      &:hover {
+        color: $text-white;
+        background-color: $royal-purple;
+        border-radius: 2px;
+      }
+    }
   }
-}
-
-.Info-item-link {
-  background-color: $dark-gray;
-  border-radius: 2px;
-  cursor: pointer;
-
-  padding: 10px;
-  display: block;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.Info-item-link:hover {
-  color: $text-white;
-  background-color: $royal-purple;
-  border-radius: 2px;
 }
 
 /**
@@ -98,11 +95,7 @@
           1px 1px $animation-compliment,
           2px 2px $animation-compliment,
           3px 3px $animation-compliment;
-  -moz-transform: translateX(-3px);
-  -ms-transform: translateX(-3px);
-  -o-transform: translateX(-3px);
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
+  @include vendor-prefix(transform, translateX(-3px), (webkit moz o));
 }
 
 
@@ -118,63 +111,27 @@
  * Swing animation effect!
  */
 .Info-item-link--swing:hover {
-  -webkit-animation: swing 1s ease;
-  -moz-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  @include vendor-prefix(animation, swing 1s ease, (webkit moz));
+  @include vendor-prefix(animation-iteration-count, 1, (webkit moz));
 }
 
-@-webkit-keyframes swing {
+@include keyframes(swing) {
   15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
+    @include vendor-prefix(transform, translateX(5px), (webkit moz o));
   }
   30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+    @include vendor-prefix(transform, translateX(-5px), (webkit moz o));
   }
   50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
+    @include vendor-prefix(transform, translateX(3px), (webkit moz o));
   }
   65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
+    @include vendor-prefix(transform, translateX(-3px), (webkit moz o));
   }
   80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
+    @include vendor-prefix(transform, translateX(2px), (webkit moz o));
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes swing {
-  15% {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-  }
-  30% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px);
-  }
-  65% {
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-  }
-  80% {
-    -webkit-transform: translateX(2px);
-    transform: translateX(2px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    @include vendor-prefix(transform, translateX(0), (webkit moz o));
   }
 }

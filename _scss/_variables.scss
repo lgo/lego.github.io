@@ -1,13 +1,122 @@
-// A set of variables for all use
+// Helper mixins, functions, and global variables
 
-$text-gray: #404040;
+
+@mixin sans-serif-font {
+  font-family: 'Open Sans', 'Arial', 'sans serif';
+}
+
+@mixin serif-font {
+  font-family: "Droid Serif", "serif";
+}
+
+$text-dark-gray: #404040;
 $text-white: #efefef;
 
-$bg-gray: #f2f2f2;
+$white: #ffffff;
 
+$lighter-gray: #fafafa;
+$light-gray: #f2f2f2;
+$medium-gray: #e5e5e5;
 $dark-gray: #aaaaaa;
 
 $royal-purple: #4c4d96;
 
 // currently a UN blue (skyish blue)
 $animation-compliment: #53a7ea;
+
+
+///////////////////////////////////////////////
+//                                           //
+// The following set of mixins and functions //
+// are dedicated to browser prefixes         //
+//                                           //
+///////////////////////////////////////////////
+
+
+////////////////////////////
+// Media size breakpoints //
+////////////////////////////
+@mixin media-size($point) {
+  @if $point == large {
+    @media only screen and (min-width: 769px) { @content; }
+  }
+  @else if $point == small {
+    @media only screen and (max-width: 768px) {@content; }
+  }
+}
+
+
+
+//////////////////////////////
+// Vendor prefix properties //
+//////////////////////////////
+@mixin vendor-prefix($name, $argument, $prefixes: (webkit moz o ms)) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$name}: #{$argument};
+  }
+  #{$name}: #{$argument};
+}
+
+/////////////////////////////
+// Vendor prefix keyframes //
+/////////////////////////////
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+///////////////////////////////////
+// Vendor Prefixing Transistions //
+///////////////////////////////////
+// source: https://gist.github.com/vieron/6045967#file-transitions-scss
+
+@function prefix($property, $prefixes: (webkit moz o ms)) {
+    $vendor-prefixed-properties: transform background-clip background-size;
+    $result: ();
+    @each $prefix in $prefixes {
+       @if index($vendor-prefixed-properties, $property) {
+         $property: -#{$prefix}-#{$property}
+       }
+       $result: append($result, $property);
+    }
+    @return $result;
+}
+
+@function trans-prefix($transition, $prefix: moz) {
+    $prefixed: ();
+    @each $trans in $transition {
+        $prop-name: nth($trans, 1);
+        $vendor-prop-name: prefix($prop-name, $prefix);
+        $prop-vals: nth($trans, 2);
+        $prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma);
+    }
+    @return $prefixed;
+}
+
+@mixin transition($values...) {
+    $transitions: ();
+    @each $declaration in $values {
+        $prop: nth($declaration, 1);
+        $prop-opts: ();
+        $length: length($declaration);
+        @for $i from 2 through $length {
+            $prop-opts: append($prop-opts, nth($declaration, $i));
+        }
+        $trans: ($prop, $prop-opts);
+        $transitions: append($transitions, $trans, comma);
+    }
+    -webkit-transition: trans-prefix($transitions, webkit);
+    -moz-transition: trans-prefix($transitions, moz);
+    -o-transition: trans-prefix($transitions, o);
+    transition: $values;
+}

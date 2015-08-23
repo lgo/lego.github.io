@@ -1,27 +1,25 @@
 ---
 ---
-root = exports ? this
-
 ###
- * Compiled from yours truly, CoffeeScript
+    Compiled from yours truly, CoffeeScript
 ###
 
 ###
- * Delays a function given a timeout (uses setTimeout)
- * @param ms   {Number} milliseconds before the delayed function executes
- * @param func {Function} executed after ms amount of time
+    Delays a function given a timeout (uses setTimeout)
+    @param ms   {Number} milliseconds before the delayed function executes
+    @param func {Function} executed after ms amount of time
 ###
 delay = (ms, func) -> setTimeout func, ms
 
 ###
- * Returns a function which sets a given elements className to the provided className
- * @param element   {Element} to set the className for
- * @param className {String} to set the elements className to
+    Returns a function which sets a given elements className to the provided className
+    @param element   {Element} to set the className for
+    @param className {String} to set the elements className to
 ###
 classSetter = (element, className) -> (-> element.className = className)
 
 ###
- * Transitions the burger menu from expanded to collapsed
+    Transitions the burger menu from expanded to collapsed
 ###
 menuBurgerClick = ->
   [menu, ...] = document.getElementsByClassName "Menu"
@@ -42,4 +40,5 @@ menuBurgerClick = ->
   return
 
 # export the click action
-@menuBurgerClick = menuBurgerClick
+root = exports ? this
+root.menuBurgerClick = menuBurgerClick
