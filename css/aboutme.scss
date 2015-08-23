@@ -1,0 +1,96 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+@import "flexbox";
+
+.Container {
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+p {
+  width: 75%;
+  margin: 20px auto;
+}
+
+.Aboutme {
+  padding-top: 50px;
+  margin: auto;
+  text-align: left;
+}
+
+.Lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.Link {
+  cursor: pointer;
+
+  $focus-size: 5px;
+
+  padding: $focus-size;
+  margin: -$focus-size;
+
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+
+  color: $link-blue;
+
+  &:hover {
+    color: $text-white;
+    background-color: $link-blue;
+    @include vendor-prefix(border-radius, 2px);
+  }
+}
+
+
+.RambleExpander {
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+  &--hidden {
+    display: none;
+    opacity: 1;
+  }
+
+  &--transition {
+    opacity: 0;
+  }
+
+  &--expanded {
+    opacity: 1;
+  }
+}
+
+.RambleTooMuch {
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+  &--hidden {
+    display: none;
+    opacity: 1;
+  }
+
+  &--transition {
+    opacity: 0;
+  }
+
+  &--expanded {
+    opacity: 1;
+  }
+}
+
+.RealRamble {
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+  &--hidden {
+    display: none;
+    opacity: 1;
+  }
+
+  &--transition {
+    opacity: 0;
+  }
+
+  &--rambling {
+    opacity: 1;
+  }
+}

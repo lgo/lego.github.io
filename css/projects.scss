@@ -1,0 +1,105 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+@import "flexbox";
+
+.Container {
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Lead {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.Link {
+  cursor: pointer;
+
+  $focus-size: 10px;
+
+  padding: $focus-size;
+  margin: -$focus-size;
+
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+
+  color: $link-blue;
+
+  &:hover {
+    color: $text-white;
+    background-color: $link-blue;
+    @include vendor-prefix(border-radius, 2px, (webkit moz));
+  }
+}
+
+.ProjectsList {
+}
+
+.Project {
+  @include flexbox;
+
+  @include media-size(small) {
+    @include flex-direction(column);
+    padding-bottom: 10px;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    padding-top: 15px;
+
+    @include media-size(large) {
+      padding-right: 20px;
+      text-align: right;
+      width: 200px;
+    }
+
+    @include media-size(small) {
+      text-align: center;
+      width: 100%;
+    }
+
+    &-link {
+        .fa {
+          margin-right: 5px;
+        }
+    }
+  }
+  &-info {
+    @include flexbox;
+    @include flex-direction(column);
+
+    &-description {
+      @include media-size(large) {
+        max-width: 500px;
+      }
+
+      @include media-size(small) {
+        padding: 0 20px;
+      }
+
+      p {
+        @include media-size(small) {
+          margin-top: 5px;
+        }
+      }
+    }
+    &-meta {
+      max-width: 350px;
+      @include flexbox;
+
+      @include media-size(large) {
+        @include justify-content(space-between);
+        margin-top: -9px;
+      }
+
+      @include media-size(small) {
+        @include justify-content(space-around);
+        margin-top: -11px;
+      }
+    }
+  }
+}

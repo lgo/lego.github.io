@@ -12,7 +12,7 @@
         <meta name="theme-color" content="#4c4d96" />
 
         <!-- standard favicon -->
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
 
         <!-- merges /index.html into / for search engine results -->
         <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
@@ -40,9 +40,9 @@
         {% include hotjar.html %}
 
         <!-- local scripts -->
-        <script type="text/javascript" src="/js/mobile-navbar.js"></script>
+        <script async type="text/javascript" src="/js/mobile-navbar.js"></script>
         {% for script in page.scripts %}
-        <script type="text/javascript" src="/js/{{ script }}.js"></script>
+        <script async type="text/javascript" src="/js/{{ script }}.js"></script>
         {% endfor %}
     </head>
     <body>

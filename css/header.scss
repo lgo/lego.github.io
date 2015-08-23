@@ -9,11 +9,9 @@
  * All header and navigation CSS
  */
 .MenuContainer {
-  height: 60px;
   width: 100%;
   background-color: $lighter-gray;
   border-bottom: 3px solid $medium-gray;
-
 
   /* fixes android chrome animation issues, causes hardware accelerated rendering */
   -webkit-transform: translateZ(0);
@@ -21,17 +19,6 @@
 
   /* fixes animation jitter */
   @include vendor-prefix(backface-visiblity, hidden, (webkit moz));
-
-  @include media-size(small) {
-    overflow: hidden;
-    @include transition(height 0.4s linear);
-  }
-
-  &--expanded {
-    @include media-size(small) {
-      height: 420px;
-    }
-  }
 }
 
 .Menu {
@@ -47,6 +34,15 @@
   }
   @include media-size(small) {
     @include flex-direction(column);
+    @include transition(height 0.2s ease-out);
+    overflow: hidden;
+    height: 0px
+  }
+
+  &--expanded {
+    @include media-size(small) {
+      height: 300px;
+    }
   }
 
   &-item {
@@ -72,16 +68,21 @@
       @include media-size(small) {
         font-size: 2rem;
       }
+
+      @include media-size(large) {
+        border-bottom: 3px solid transparent;
+      }
+
+      &:hover {
+        color: $text-white;
+        background-color: $royal-purple;
+
+        @include media-size(large) {
+          border-bottom: 3px solid $royal-purple-darker;
+        }
+      }
     }
   }
-}
-
-
-
-
-.Menu-item-link:hover {
-  color: $text-white;
-  background-color: $royal-purple;
 }
 
 .MenuBurger {
@@ -91,19 +92,19 @@
     @include flexbox;
     @include justify-content(flex-end);
   }
-}
 
-.MenuBurger-square {
-  width: 47px;
-  height: 47px;
-  padding: 0 5px;
-  margin: auto 0;
-  margin-right: 30px;
+  &-square {
+    width: 47px;
+    height: 47px;
+    padding: 0 5px;
+    margin: auto 0;
+    margin-right: 30px;
 
-  text-align: center;
+    text-align: center;
 
-  border: solid 1px $text-dark-gray;
-  @include vendor-prefix(border-radius, 4px, (webkit moz));
+    border: solid 2px $text-dark-gray;
+    @include vendor-prefix(border-radius, 4px, (webkit moz));
+  }
 }
 
 .Container {

@@ -1,0 +1,14 @@
+
+- name: TechTanks
+  description:
+    - "A programming game where you get to code your own tank and fight others! It's a great way to get started with programming and learn Ruby."
+  link: https://github.com/TechRetreat/RTanque
+  tech: "Ruby, Rails"
+  date: "August 2015"
+
+- name: JoOS
+  description:
+    - "A venture into low level programming and learning the core of operating systems."
+  link: http://github.com/xLegoz/JoOS
+  tech: "C, ASM"
+  date: "January 2014"

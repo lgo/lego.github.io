@@ -53,7 +53,7 @@
 
     &-link {
       background-color: $white;
-      border-radius: 2px;
+      @include vendor-prefix(border-radius, 2px, (webkit moz));
       cursor: pointer;
 
       padding: 10px;
@@ -63,7 +63,6 @@
       &:hover {
         color: $text-white;
         background-color: $royal-purple;
-        border-radius: 2px;
       }
     }
   }
