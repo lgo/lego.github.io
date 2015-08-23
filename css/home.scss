@@ -1,0 +1,180 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+
+.Container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Home {
+  margin: auto;
+  text-align: center;
+}
+
+.Lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.Brand {
+  font-family: "Droid Serif", "serif";
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  @media only screen and (max-width : 768px) {
+    font-size: 3rem;
+  }
+}
+
+.Info {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+  @media only screen and (max-width : 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.Info-item {
+  @media only screen and (max-width : 768px) {
+    margin: 5px 20px;
+  }
+}
+
+.Info-item-link {
+  background-color: $dark-gray;
+  border-radius: 2px;
+  cursor: pointer;
+
+  padding: 10px;
+  display: block;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.Info-item-link:hover {
+  color: $text-white;
+  background-color: $royal-purple;
+  border-radius: 2px;
+}
+
+/**
+ * Responsive positioning for brand, due to improve focal point in larger screens
+ */
+.Home {
+  @media only screen and (min-width: 1025px) and (min-height: 700px) {
+    margin-top: 200px;
+  }
+}
+
+
+/**
+ ====================
+ * Some fancy animations
+ * These are a bunch of animations I was experimenting with,
+ * only one used but many cool ones below!
+ ====================
+ */
+
+/**
+ * 3D border and offset effect
+ */
+.Info-item-link--border:hover {
+  box-shadow:
+          1px 1px $animation-compliment,
+          2px 2px $animation-compliment,
+          3px 3px $animation-compliment;
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+
+/**
+ * Inset border effect
+ */
+.Info-item-link--inset:hover {
+  box-shadow: inset 0 0 0 3px $animation-compliment;
+}
+
+
+/**
+ * Swing animation effect!
+ */
+.Info-item-link--swing:hover {
+  -webkit-animation: swing 1s ease;
+  -moz-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+---
+  <div class="aboutme">
+  Hi there! Currently, if you're wondering. I'm a Computer Science student at the University of Waterloo, located in Ontario, Canada. I have a strong passion for what I study, and love solving problems using what I've learned! Among my learning is prospective studies in cryptography, hardware architecture, network systems and architectures, compilers and operating systems, and more!
+  </div>
+
+  Check out some of my blog posts over at INSERT MEDIUM BLOG HERE
+
+  <h2><i class="fa fa-github"></i> Projects</h2>
+  <ul class="project-posts posts">
+    {% for project in site.data.projects %}
+      <li>
+      <a href="{{project.link}}">{{project.name}}</a>
+      <br>
+      <img src="{{project.image}}" alt="" class="project-img">
+      <ul>
+        {% for point in project.description %}
+          <li>{{point}}</li>
+        {% endfor %}
+      </ul>
+      <br>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

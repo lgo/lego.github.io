@@ -1,0 +1,70 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+
+
+/**
+ * CSS used in every page as part of the default layout
+ */
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #f2f2f2;
+
+  font-family: 'Open Sans', 'Arial', 'sans serif';
+  font-size: 1rem;
+
+  color: #404040;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Container {
+  flex-grow: 1;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+/**
+ * Media rule breakpoints, kudos Bootstrap project
+ */
+
+@media only screen and (max-width: 1024px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}

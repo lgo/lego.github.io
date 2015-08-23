@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- IE interpreter mode -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta charset="utf-8" />
+
+        <!-- responsive mode for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/ >
+        <!-- android theme colour -->
+        <meta name="theme-color" content="#4c4d96" />
+
+        <!-- standard favicon -->
+        <link rel="shortcut icon" href="/favicon.png" />
+
+        <!-- merges /index.html into / for search engine results -->
+        <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+
+        <!-- local assets -->
+        <link rel="stylesheet" href="/css/default.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        {% for style in page.styles %}
+        <link rel="stylesheet" href="/css/{{ style }}.css" />
+        {% endfor %}
+
+        <!-- remote assets -->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans|Droid+Serif"/>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+        <title>{{ site.data.theme.name }} - {{ page.title }}</title>
+
+        <!-- misc meta -->
+        <meta name="author" content="{{ site.data.theme.name }}" />
+        <meta name="description" content="The site of {{ site.data.theme.name }}" />
+        <meta name="google-site-verification" content="4MrONodOF8HJgojk-ot8T4dAk0PCaig2U0HJcdB0fKA" />
+
+        {% include ga.html %}
+
+        {% include hotjar.html %}
+
+        <!-- local scripts -->
+        <script type="text/javascript" src="/js/mobile-navbar.js"></script>
+        {% for script in page.scripts %}
+        <link rel="stylesheet" href="/js/{{ script }}.js" />
+        {% endfor %}
+    </head>
+    <body>
+
+        {% include header.html %}
+
+        <div class="Container">
+            {{ content }}
+        </div>
+
+    </body>
+</html>
