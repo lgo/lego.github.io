@@ -1,3 +1,5 @@
+- name: "kerbos"
+  description: "Secure chat platform. Current MVP goal is a RESTFUL server implementation."
 
 - name: TechTanks
   description:
@@ -12,3 +14,42 @@
   link: http://github.com/xLegoz/JoOS
   tech: "C, ASM"
   date: "January 2014"
+
+- name: meercast
+  description: "Android screen streaming service. Completed in 24hrs as part of BattleHacks by a16z. The winning hack!"
+- name: jjNES
+  description: "NES emulator in Java."
+- name: MathSoc Website
+  description: "Architected a managable website for MatchSoc, which is to be adobted by all student societies at the University of Water within the next year."
+- name: Mobile Door Locking
+  description: "Remote deadbolt controller via. phone app through SMS or data"
+- name: chip8
+  description: "Z80 emulator"
+- name: fabric.py3 (HUGE UNDERTAKING)
+  description: "Complete port to Python3 of Fabric, one of the largest used Python packages."
+- name: sublime-racket
+  description: "Sublime Racket syntax... Because the other one sucked :("
+- name: AuRacket
+  description: "Archlinux User Respository installer developed in Racket"
+- name: flipflip
+  description: "Machine learning applied to a rudimentary Flappy bird akin game. Completed in 24hrs at HackWestern"
+- name: carpy
+  description: "Event analytics dashboard. Specifically aimed at metrics based on card games, but moving to a generalized model."
+- name: phonebuzz
+  description: "Monitors nearby devices to alert the homeowner upon the arrival of a registered device. Useful for friends as a doorbell if there isn't already one!"
+- name: sonorian-sim
+  description: "World simulation. Currently generates worlds. Includes small HTML viewer for the world data."
+- name: cc3k
+  description: "Robust rogue-like game. Built for a university course final project."
+- name: mpd-8tracks
+  description: "mpd plugin to access 8tracks."
+- name: PongJS
+  description: "Basic Pong in HTML5 Canvas as a demo to those new to programming. Used as a presentation to the highschool student body as a demo of Computer Science club."
+- name: bitstart
+  description: "Small realtime application as a learning project of websockets and bitcoin APIs. Part of a Coursera course cirriculum."
+- name: TRPGer
+  description: "Text-based RPG engine allowing easy scripting through text files. Continuation of a highschool final project."
+- name: Waypoint
+  description: "Minecraft server plugin for Bukkit"
+- name: WBot
+  description: "Bot client for a video game, Runescape Classic (2007). It featured a robust API, implementing competitor APIs to allow cross-compatible bot scripts. Over 500,000 users."
