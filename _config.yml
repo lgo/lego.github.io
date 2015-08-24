@@ -1,0 +1,13 @@
+highlighter: pygments
+url: http://pereira.io
+lsi: false
+exclude: [LICENSE, README.md, .gitignore, Gemfile, Gemfile.lock]
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+sass:
+    sass_dir: _scss
+    style: :compressed

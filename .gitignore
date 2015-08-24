@@ -1,4 +1,4 @@
-*~
-*.swp
-deploy/
-.hyde_deps
+Gemfile.lock
+_site/
+_old/
+.sass-cache/

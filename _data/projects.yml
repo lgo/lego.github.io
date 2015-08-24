@@ -1,0 +1,133 @@
+- name: "kerbos"
+  description:
+    - "Secure chat platform. Current MVP goal is a RESTFUL server implementation."
+  link: https://github.com/TranceSquid/kerbos-machine
+  tech: "Python. Flask, PostgreSQL"
+  date: "September 2015"
+
+- name: TechTanks
+  description:
+    - "A programming game where you get to code your own tank and fight others! It's a great way to get started with programming and learn Ruby."
+  link: https://github.com/TechRetreat/RTanque
+  tech: "Ruby. Rails"
+  date: "August 2015"
+
+- name: chip8
+  description: "Z80 emulator"
+  link: https://github.com/xLegoz/chip8
+  tech: "Rust"
+  date: "August 2015"
+
+- name: fabric.py3 port
+  description: "Complete port to Python3 of Fabric, one of the largest used Python packages."
+  link: https://github.com/xLegoz/fabric
+  tech: "Python"
+  date: "July 2015"
+
+- name: meercast
+  description: "Android screen streaming service. Completed in 24hrs as part of BattleHacks by a16z. The winning hack!"
+  # link: https://github.com/KartikTalwar/meercast
+  # TODO unprivatize
+  tech: "Android, Python, NodeJS, ffmpeg"
+  date: "July 2015"
+
+# - name: sublime-racket
+#   description: "Sublime Racket syntax... Because the other one sucked :("
+#   link: https://github.com/xLegoz/sublime-racket
+#   # tech: "Regex"
+#   date: "May 2015"
+
+- name: AuRacket
+  description: "Archlinux User Respository installer developed in Racket"
+  link: https://github.com/xLegoz/AuRacket
+  tech: "Racket"
+  date: "April 2015"
+
+- name: flipflip
+  description: "Machine learning applied to a rudimentary Flappy bird akin game. Completed in 24hrs at HackWestern"
+  link: https://github.com/xLegoz/flipflip
+  tech: "Python. Machine Learning"
+  date: "March 2015"
+
+- name: carpy
+  description: "Event analytics dashboard. Specifically aimed at metrics based on card games, but moving to a generalized model."
+  link: https://github.com/xLegoz/carpy
+  tech: "Python, Javascript. Flask, Angular"
+  date: "March 2015"
+
+- name: MathSoc Website
+  description: "Architected a managable website for MatchSoc, which is to be adobted by all student societies at the University of Water within the next year."
+  link: https://github.com/kdparker/MathSocWebsiteRebuild
+  tech: "Python. Django"
+  date: "February 2015"
+
+- name: JoOS
+  description:
+    - "A venture into low level programming and learning the core of operating systems."
+  link: http://github.com/xLegoz/JoOS
+  tech: "C, ASM"
+  date: "2014"
+
+- name: phonebuzz
+  description: "Monitors nearby devices to alert the homeowner upon the arrival of a registered device. Useful for friends as a doorbell if there isn't already one!"
+  link: https://github.com/xLegoz/phonebuzz
+  tech: "Python, Raspberry Pis (many!)"
+  date: "December 2014"
+
+- name: Mobile Door Locking
+  description: "Remote deadbolt controller via. phone app through SMS or data"
+  # link: https://github.com/xLegoz/mobile-lock
+  # TODO unprivatize
+  tech: "Raspberry Pi, Android, Python"
+  date: "November 2014"
+
+- name: sonorian-sim
+  description: "World simulation. Currently generates worlds. Includes small HTML viewer for the world data."
+  link: https://github.com/xLegoz/sonorian-sim
+  tech: "Python"
+  date: "October 2014"
+
+- name: cc3k
+  description: "Robust rogue-like game. Built for a university course final project."
+  # link: https://github.com/xLegoz/cc3k
+  # TODO release publicly
+  tech: "C++"
+  date: "August 2014"
+
+- name: mpd-8tracks
+  description: "mpd plugin to access 8tracks."
+  link: https://github.com/xLegoz/mpd-8tracks
+  tech: "Python"
+  date: "July 2014"
+
+- name: jjNES
+  description: "NES emulator in Java."
+  tech: "Java"
+  date: "2013"
+
+- name: PongJS
+  description: "Basic Pong in HTML5 Canvas as a demo to those new to programming. Used as a presentation to the highschool student body as a demo of Computer Science club."
+  tech: "Javascript"
+  date: "2013"
+
+- name: bitstarter
+  description: "Small realtime application as a learning project of websockets and bitcoin APIs. Part of a Coursera course cirriculum."
+  link: https://github.com/xLegoz/bitstarter
+  tech: "NodeJS, Javascript"
+  date: "2013"
+
+- name: TRPGer
+  description: "Text-based RPG engine allowing easy scripting through text files. Continuation of a highschool final project."
+  link: https://github.com/xLegoz/TRPGer
+  tech: "Java"
+  date: "2013"
+
+- name: Waypoint
+  description: "Minecraft server plugin for Bukkit"
+  tech: "Java"
+  date: "2012"
+
+- name: WBot
+  description: "Bot client for a video game, Runescape Classic (2007). It featured a robust API, implementing competitor APIs to allow cross-compatible bot scripts. Over 500,000 users."
+  tech: "Java"
+  date: "2012"

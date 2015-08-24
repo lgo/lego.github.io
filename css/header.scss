@@ -1,0 +1,126 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+@import "flexbox";
+
+/**
+ * All header and navigation CSS
+ */
+.MenuContainer {
+  width: 100%;
+  background-color: $menu-bg-color;
+  border-bottom: 3px solid $menu-border-color;
+
+  /* fixes android chrome animation issues, causes hardware accelerated rendering */
+  -webkit-transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+
+  /* fixes animation jitter */
+  @include vendor-prefix(backface-visiblity, hidden, (webkit moz));
+}
+
+.Menu {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+
+  @include flexbox;
+  @include justify-content(space-around);
+
+  @include media-size(large) {
+    height: 60px;
+  }
+  @include media-size(small) {
+    @include flex-direction(column);
+    @include transition(height 0.2s ease-out);
+    overflow: hidden;
+    height: 0px
+  }
+
+  &--expanded {
+    @include media-size(small) {
+      height: 300px;
+    }
+  }
+
+  &-item {
+    height: 60px;
+
+    @include media-size(large) {
+      width: auto;
+      @include flex-grow(1);
+    }
+
+    &-link {
+      @include transition(all 0.2s ease-out);
+
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      line-height: 60px;
+
+      text-align: center;
+      font-size: 1.5rem;
+
+      color: $menu-color;
+
+      @include media-size(small) {
+        font-size: 2rem;
+      }
+
+      @include media-size(large) {
+        border-bottom: 3px solid transparent;
+      }
+
+      &:hover {
+        color: $text-hover-color;
+        background-color: $text-hover-bg-color;
+
+        @include media-size(large) {
+          border-bottom: 3px solid $text-hover-border-color;
+        }
+      }
+    }
+  }
+}
+
+.MenuBurger {
+  display: none;
+  @include media-size(small) {
+    height: 60px;
+    @include flexbox;
+    @include justify-content(flex-end);
+  }
+
+  &-square {
+    width: 47px;
+    height: 47px;
+    padding: 0 5px;
+    margin: auto 0;
+    margin-right: 30px;
+
+    text-align: center;
+
+    border: solid 2px $text-color;
+    @include vendor-prefix(border-radius, 4px, (webkit moz));
+  }
+}
+
+.Container {
+  @include media-size(small) {
+    opacity: 1;
+    @include transition(opacity 0.1s linear);
+
+    &--transition {
+      opacity: 0;
+    }
+
+    &--hidden {
+      opacity: 0;
+      display: none !important;
+    }
+  }
+}

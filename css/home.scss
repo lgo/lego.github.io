@@ -1,0 +1,136 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+@import "flexbox";
+
+.Container {
+  height: auto;
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+}
+
+.Home {
+  margin: auto;
+  text-align: center;
+}
+
+.Lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.Brand {
+  @include serif-font;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  @include media-size(small) {
+    font-size: 3rem;
+  }
+}
+
+.Info {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 400px;
+  text-align: center;
+  @include flexbox;
+  @include justify-content(space-around);
+
+  @include media-size(small) {
+    @include flex-direction(column);
+    width: 100%;
+  }
+
+  &-item {
+    @include media-size(small) {
+      margin: 5px 20px;
+    }
+
+    &-link {
+      background-color: $info-button-bg-color;
+      @include vendor-prefix(border-radius, 2px, (webkit moz));
+      cursor: pointer;
+
+      padding: 10px;
+      display: block;
+      @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+
+      &:hover {
+        color: $text-hover-color;
+        background-color: $text-hover-bg-color;
+      }
+    }
+  }
+}
+
+/**
+ * Responsive positioning for brand, due to improve focal point in larger screens
+ */
+.Home {
+  @media only screen and (min-width: 1025px) and (min-height: 700px) {
+    margin-top: 200px;
+  }
+}
+
+
+/**
+ ====================
+ * Some fancy animations
+ * These are a bunch of animations I was experimenting with,
+ * only one used but many cool ones below!
+ ====================
+ */
+
+/**
+ * 3D border and offset effect
+ */
+.Info-item-link--border:hover {
+  box-shadow:
+          1px 1px $animation-compliment,
+          2px 2px $animation-compliment,
+          3px 3px $animation-compliment;
+  @include vendor-prefix(transform, translateX(-3px), (webkit moz o));
+}
+
+
+/**
+ * Inset border effect
+ */
+.Info-item-link--inset:hover {
+  box-shadow: inset 0 0 0 3px $animation-compliment;
+}
+
+
+/**
+ * Swing animation effect!
+ */
+.Info-item-link--swing:hover {
+  @include vendor-prefix(animation, swing 1s ease, (webkit moz));
+  @include vendor-prefix(animation-iteration-count, 1, (webkit moz));
+}
+
+@include keyframes(swing) {
+  15% {
+    @include vendor-prefix(transform, translateX(5px), (webkit moz o));
+  }
+  30% {
+    @include vendor-prefix(transform, translateX(-5px), (webkit moz o));
+  }
+  50% {
+    @include vendor-prefix(transform, translateX(3px), (webkit moz o));
+  }
+  65% {
+    @include vendor-prefix(transform, translateX(-3px), (webkit moz o));
+  }
+  80% {
+    @include vendor-prefix(transform, translateX(2px), (webkit moz o));
+  }
+  100% {
+    @include vendor-prefix(transform, translateX(0), (webkit moz o));
+  }
+}

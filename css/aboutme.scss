@@ -1,0 +1,72 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+@import "variables";
+@import "flexbox";
+
+.Container {
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+p {
+  width: 75%;
+  margin: 20px auto;
+}
+
+.Aboutme {
+  margin: auto;
+  text-align: left;
+
+  @include media-size(large) {
+    padding-top: 50px;
+  }
+
+  @include media-size(small) {
+    padding-top: 10px;
+  }
+}
+
+.Lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.Link {
+  cursor: pointer;
+
+  $focus-size: 5px;
+
+  padding: $focus-size;
+  margin: -$focus-size;
+
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+
+  color: $link-color;
+
+  &:hover {
+    color: $text-hover-color;
+    background-color: $link-color;
+    @include vendor-prefix(border-radius, 2px);
+  }
+}
+
+.RambleExpander,
+.RambleTooMuch,
+.RealRamble {
+  @include vendor-prefix(transition, all 0.2s ease-out, (webkit moz o));
+  &--hidden {
+    display: none;
+    opacity: 1;
+  }
+
+  &--transition {
+    opacity: 0;
+  }
+
+  &--expanded {
+    opacity: 1;
+  }
+}
