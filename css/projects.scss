@@ -79,6 +79,7 @@
   &-info {
     @include flexbox;
     @include flex-direction(column);
+    @include flex-grow(1);
 
     &-description {
       @include media-size(large) {
@@ -96,7 +97,7 @@
       }
     }
     &-meta {
-      max-width: 350px;
+      max-width: 400px;
       @include flexbox;
 
       @include media-size(large) {

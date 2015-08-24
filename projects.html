@@ -9,35 +9,39 @@ styles: ["projects"]
   </div>
   <div class="ProjectsList">
     {% for project in site.data.projects %}
-    <div class="Project">
-        <div class="Project-title">
-            {% if project.link %}
-            <a class="Project-title-link Link" target="_blank" href="{{project.link}}">
-                <i class="fa fa-github"></i>
-                {{project.name}}
-            </a>
-            {% else %}
-            {{project.name}}
-            {% endif %}
-        </div>
-        <div class="Project-info">
-            <div class="Project-info-description">
-                {% for point in project.description %}
-                <p>{{point}}</p>
-                {% endfor %}
+        <div class="Project">
+            <div class="Project-title">
+                {% if project.link %}
+                    <a class="Project-title-link Link" target="_blank" href="{{project.link}}">
+                        <i class="fa fa-github"></i>
+                        {{project.name}}
+                    </a>
+                {% else %}
+                    {{project.name}}
+                {% endif %}
             </div>
-            <div class="Project-info-meta">
-                <div class="Project-info-meta-tech">
-                    <i class="fa fa-gear"></i>
-                    {{ project.tech }}
+            <div class="Project-info">
+                <div class="Project-info-description">
+                    {% for point in project.description %}
+                        <p>{{point}}</p>
+                    {% endfor %}
                 </div>
-                <div class="Project-info-meta-date">
-                    <i class="fa fa-clock-o"></i>
-                    {{ project.date }}
+                <div class="Project-info-meta">
+                    <div class="Project-info-meta-tech">
+                        {% if project.tech %}
+                            <i class="fa fa-gear"></i>
+                            {{ project.tech }}
+                        {% endif %}
+                    </div>
+                    <div class="Project-info-meta-date">
+                        {% if project.tech %}
+                            <i class="fa fa-clock-o"></i>
+                            {{ project.date }}
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     {% endfor %}
   </div>
 </div>
