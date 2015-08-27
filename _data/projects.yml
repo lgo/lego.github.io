@@ -26,9 +26,9 @@
 
 - name: meercast
   description: "Android screen streaming service. Completed in 24hrs as part of BattleHacks by a16z. The winning hack!"
-  # link: https://github.com/KartikTalwar/meercast
   # TODO unprivatize
-  tech: "Android, Python, NodeJS, ffmpeg"
+  # link: https://github.com/KartikTalwar/meercast
+  tech: "Android, Python, NodeJS. ffmpeg"
   date: "July 2015"
 
 # - name: sublime-racket
@@ -50,7 +50,7 @@
   date: "March 2015"
 
 - name: carpy
-  description: "Event analytics dashboard. Specifically aimed at metrics based on card games, but moving to a generalized model."
+  description: "User event analytics dashboard. Specifically aimed at metrics for card games to assist in balancing and creating beatiful visualizations, but moving to a generalized model."
   link: https://github.com/xLegoz/carpy
   tech: "Python, Javascript. Flask, Angular"
   date: "March 2015"
@@ -69,7 +69,7 @@
   date: "2014"
 
 - name: phonebuzz
-  description: "Monitors nearby devices to alert the homeowner upon the arrival of a registered device. Useful for friends as a doorbell if there isn't already one!"
+  description: "Monitors nearby devices to alert the homeowner upon close proximity of a registered device. Useful as a doorbell for friends if there isn't already one!"
   link: https://github.com/xLegoz/phonebuzz
   tech: "Python, Raspberry Pis (many!)"
   date: "December 2014"
