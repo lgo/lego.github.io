@@ -1,13 +1,13 @@
 - name: "kerbos"
   description:
-    - "Secure chat platform. Current MVP goal is a RESTFUL server implementation."
+    - "Secure chat platform. Current MVP goal is a RESTful server implementation."
   link: https://github.com/TranceSquid/kerbos-machine
   tech: "Python. Flask, PostgreSQL"
   date: "September 2015"
 
 - name: TechTanks
   description:
-    - "A programming game where you get to code your own tank and fight others! It's a great way to get started with programming and learn Ruby."
+    - "A programming game where you get to code a tank's AI in ruby and fight others! It was designed as an introduction to Ruby for a highschool hackathon, <a class='Link' target='_blank' href='http://techretreat.ca/'>Tech Retreat</a>"
   link: https://github.com/TechRetreat/RTanque
   tech: "Ruby. Rails"
   date: "August 2015"
