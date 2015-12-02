@@ -1,3 +1,9 @@
+- name: rustygameboy
+  description: "Work in progress Gameboy emulator. An exploratory project into more advanced architectures."
+  link: https://github.com/xLegoz/rustygameboy
+  tech: "Rust"
+  date: "2015"
+
 - name: "kerbos"
   description:
     - "Secure chat platform. Current MVP goal is a RESTful server implementation."
@@ -12,11 +18,11 @@
   tech: "Ruby. Rails"
   date: "August 2015"
 
-- name: chip8
-  description: "Z80 emulator"
-  link: https://github.com/xLegoz/chip8
+- name: rustychip
+  description: "Chip8 emulator"
+  link: https://github.com/xLegoz/rustychip
   tech: "Rust"
-  date: "August 2015"
+  date: "2015"
 
 - name: fabric.py3 port
   description: "Complete port to Python3 of Fabric, one of the largest used Python packages."
