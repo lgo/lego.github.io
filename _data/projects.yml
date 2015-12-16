@@ -37,7 +37,7 @@
   tech: "Python"
   date: "July 2015"
 
-- name: meercast
+- name: Moocast
   description: "Android screen streaming service. Completed in 24hrs as part of BattleHacks by a16z. The winning hack!"
   # TODO unprivatize
   # link: https://github.com/KartikTalwar/meercast
@@ -76,7 +76,7 @@
 
 - name: JoOS
   description:
-    - "A venture into low level programming and learning the core of operating systems."
+    - "A rudimentary operating system, as a venture into learning low level programming and hardware interfaces. Developed in ASM and C. Compiles to a i586 target."
   link: http://github.com/xLegoz/JoOS
   tech: "C, ASM"
   date: "2014"
@@ -141,6 +141,6 @@
   date: "2012"
 
 - name: WBot
-  description: "Bot client for a video game, Runescape Classic (2007). It featured a robust API, implementing competitor APIs to allow cross-compatible bot scripts. Over 500,000 users."
+  description: "A bot client for a popular online video game, Runescape, developed in Java. Largely reverse engineering of bytecode. Featured a robust scripting API, and implemented competitor APIs for compatibility. Over 250,000 users."
   tech: "Java"
   date: "2012"
