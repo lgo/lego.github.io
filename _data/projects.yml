@@ -34,7 +34,7 @@
   description: "Android screen streaming service. Completed in 24hrs as part of BattleHacks by a16z. The winning hack!"
   # TODO unprivatize
   # link: https://github.com/KartikTalwar/meercast
-  tech: "Android, Python, NodeJS. ffmpeg"
+  tech: "Android, Python, NodeJS. FFmpeg"
   date: "July 2015"
 
 # - name: sublime-racket
@@ -62,7 +62,7 @@
   date: "March 2015"
 
 - name: MathSoc Website
-  description: "Architected a managable website for MatchSoc, which is to be adobted by all student societies at the University of Water within the next year."
+  description: "Architected a managable website for MathSoc, which is to be adopted by all student societies at the University of Waterloo within the next year."
   link: https://github.com/kdparker/MathSocWebsiteRebuild
   tech: "Python. Django"
   date: "February 2015"
@@ -81,7 +81,7 @@
   date: "December 2014"
 
 - name: Mobile Door Locking
-  description: "Remote deadbolt controller via. phone app through SMS or data"
+  description: "Remote deadbolt controller via phone app through SMS or data"
   # link: https://github.com/xLegoz/mobile-lock
   # TODO unprivatize
   tech: "Raspberry Pi, Android, Python"
