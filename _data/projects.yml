@@ -44,11 +44,11 @@
   tech: "Android, Python, NodeJS. FFmpeg"
   date: "July 2015"
 
-# - name: sublime-racket
-#   description: "Sublime Racket syntax... Because the other one sucked :("
-#   link: https://github.com/xLegoz/sublime-racket
-#   # tech: "Regex"
-#   date: "May 2015"
+- name: sublime-racket
+  description: "A better Sublime text Racket syntax... Because the other one sucked :("
+  link: https://github.com/xLegoz/sublime-racket
+  # tech: "Regex"
+  date: "May 2015"
 
 - name: AuRacket
   description: "Archlinux User Respository installer developed in Racket"
