@@ -1,3 +1,10 @@
+- name: compiler
+  description:
+    - "A compiler for a dialect of C, including pointers. Currently compiles to a MIPS target and includes a MIPS assembler. Designed to be highly testable and modular, with a work in progress MIPS emulator in Rust to validate programs."
+  link: https://github.com/xLegoz/compiler
+  tech: "Racket. Rust"
+  date: "2015"
+
 - name: rustygameboy
   description: "Work in progress Gameboy emulator. An exploratory project into more advanced architectures."
   link: https://github.com/xLegoz/rustygameboy
