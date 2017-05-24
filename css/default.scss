@@ -37,7 +37,7 @@ body {
   @include flex-grow(1);
 }
 
-a {
+a:not(.linkify) {
   color: $text-color;
   text-decoration: none;
 }

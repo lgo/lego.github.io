@@ -1,3 +1,24 @@
+- name: go-swallow
+  description:
+    - "A Go job framework inspired from Sidekiq."
+  link: https://github.com/xLegoz/go-swallow
+  tech: "Go"
+  date: "2017"
+
+- name: spacecmd
+  description:
+    - "An SSH server with a simple to use API to create a customized interface."
+  link: https://github.com/xLegoz/spacecmd
+  tech: "Python. SSH"
+  date: "2017"
+
+- name: gum
+  description:
+    - "CLI for managing local development environments with just a simple configuration per project!"
+  link: https://github.com/xLegoz/gum
+  tech: "Go"
+  date: "2016"
+
 - name: compiler
   description:
     - "A compiler for a dialect of C, including pointers. Currently compiles to a MIPS target and includes a MIPS assembler. Designed to be highly testable and modular, with a work in progress MIPS emulator in Rust to validate programs."
@@ -10,13 +31,6 @@
   link: https://github.com/xLegoz/rustygameboy
   tech: "Rust"
   date: "2015"
-
-- name: "kerbos"
-  description:
-    - "Secure chat platform. Current MVP goal is a RESTful server implementation."
-  link: https://github.com/TranceSquid/kerbos-machine
-  tech: "Python. Flask, PostgreSQL"
-  date: "September 2015"
 
 - name: TechTanks
   description:
@@ -50,22 +64,10 @@
   # tech: "Regex"
   date: "May 2015"
 
-- name: AuRacket
-  description: "Archlinux User Respository installer developed in Racket"
-  link: https://github.com/xLegoz/AuRacket
-  tech: "Racket"
-  date: "April 2015"
-
 - name: flipflip
   description: "Machine learning applied to a rudimentary Flappy bird akin game. Completed in 24hrs at HackWestern"
   link: https://github.com/xLegoz/flipflip
   tech: "Python. Machine Learning"
-  date: "March 2015"
-
-- name: carpy
-  description: "User event analytics dashboard. Specifically aimed at metrics for card games to assist in balancing and creating beatiful visualizations, but moving to a generalized model."
-  link: https://github.com/xLegoz/carpy
-  tech: "Python, Javascript. Flask, Angular"
   date: "March 2015"
 
 - name: MathSoc Website
