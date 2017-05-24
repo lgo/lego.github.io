@@ -9,3 +9,21 @@
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
 </script>
+
+<script>
+var outbound = function(url, item) {
+  if (window.ga) {
+    // send event for an outbound click
+    ga('send', 'event', 'outbound', item, url, {
+      'transport': 'beacon',
+      'hitCallback': function() {
+      }
+    });
+  } else {
+    // if blocked, do nothing
+  }
+  // ensure we follow the link
+  return true;
+}
+
+</script>
