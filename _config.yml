@@ -2,6 +2,7 @@ highlighter: rouge
 url: http://pereira.io
 lsi: false
 exclude: [LICENSE, README.md, .gitignore, Gemfile, Gemfile.lock]
+include: [".well-known"]
 defaults:
   -
     scope:
